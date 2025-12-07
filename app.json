@@ -14,9 +14,7 @@
       "backgroundColor": "#ffffff"
     },
 
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
 
     "ios": {
       "supportsTablet": true
@@ -35,6 +33,12 @@
       "favicon": "./assets/favicon.png"
     },
 
-    "plugins": []
+    "plugins": [],
+
+    "extra": {
+      "eas": {
+        "projectId": "85d11519-e953-4076-8165-d4cb55e6dc19"
+      }
+    }
   }
 }
