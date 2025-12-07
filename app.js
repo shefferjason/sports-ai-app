@@ -1,18 +1,26 @@
 
-function runLogic() {
-    const output = document.getElementById('output');
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-    // Placeholder logic – you can replace this with your real model later
-    const predictions = [
-        "Miami covers the spread 🔥",
-        "Heat win by 6+",
-        "Achane over 83 yards",
-        "James Cook over receptions",
-        "Timberwolves under total points",
-        "Celtics win outright"
-    ];
+import HomeScreen from './screens/HomeScreen';
+import NFLScreen from './screens/NFLScreen';
+import NBAScreen from './screens/NBAScreen';
+import AIScreen from './screens/AIScreen';
+import SettingsScreen from './screens/SettingsScreen';
 
-    const pick = predictions[Math.floor(Math.random() * predictions.length)];
+const Tab = createBottomTabNavigator();
 
-    output.innerHTML = "<b>Prediction:</b> " + pick;
+export default function App() {
+  return (
+    <NavigationContainer>
+      <Tab.Navigator screenOptions={{ headerShown: false }}>
+        <Tab.Screen name="Home" component={HomeScreen} />
+        <Tab.Screen name="NFL" component={NFLScreen} />
+        <Tab.Screen name="NBA" component={NBAScreen} />
+        <Tab.Screen name="AI" component={AIScreen} />
+        <Tab.Screen name="Settings" component={SettingsScreen} />
+      </Tab.Navigator>
+    </NavigationContainer>
+  );
 }
