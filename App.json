@@ -1,11 +1,15 @@
 {
   "expo": {
-    "name": "SportsAI",
-    "slug": "sports-ai-app",
+    "name": "SportsLogicAI",
+    "slug": "sportslogicai",
     "version": "1.0.0",
     "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "sdkVersion": "52.0.0",
     "platforms": ["android"],
-    "jsEngine": "hermes",
-    "sdkVersion": "51.0.0"
+    "android": {
+      "package": "com.shefferjason.sportslogicai",
+      "versionCode": 1
+    }
   }
 }
