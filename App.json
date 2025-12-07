@@ -1,15 +1,14 @@
 {
   "expo": {
-    "name": "SportsLogicAI",
-    "slug": "sportslogicai",
+    "name": "sports-ai-app",
+    "slug": "sports-ai-app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "sdkVersion": "52.0.0",
-    "platforms": ["android"],
-    "android": {
-      "package": "com.shefferjason.sportslogicai",
-      "versionCode": 1
-    }
+    "splash": {
+      "image": "./assets/splash/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"]
   }
 }
