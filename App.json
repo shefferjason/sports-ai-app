@@ -3,14 +3,30 @@
     "name": "SportsLogicAI",
     "slug": "sportslogicai",
     "version": "1.0.0",
-    "sdkVersion": "54.0.0",
-    "platforms": ["android"],
     "orientation": "portrait",
-    "jsEngine": "hermes",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
     "assetBundlePatterns": ["**/*"],
+    
     "android": {
       "package": "com.shefferjason.sportslogicai",
-      "versionCode": 1
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#000000"
+      }
+    },
+
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.shefferjason.sportslogicai"
     }
   }
 }
