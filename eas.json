@@ -3,6 +3,14 @@
     "version": ">= 8.0.0"
   },
   "build": {
+    "android": {
+      "credentialsSource": "remote",
+      "distribution": "store"
+    },
+    "ios": {
+      "credentialsSource": "remote",
+      "distribution": "store"
+    },
     "development": {
       "developmentClient": true,
       "distribution": "internal"
