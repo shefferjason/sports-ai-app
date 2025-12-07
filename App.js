@@ -1,28 +1,33 @@
+// App.js
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-
-import HomeScreen from './screens/HomeScreen';
-import NFLScreen from './screens/NFLScreen';
-import NBAScreen from './screens/NBAScreen';
-import AIScreen from './screens/AIScreen';
-import SettingsScreen from './screens/SettingsScreen';
+import { View, Text } from 'react-native';
 
 const Tab = createBottomTabNavigator();
+
+function HomeScreen() {
+  return (
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Text>Home Screen</Text>
+    </View>
+  );
+}
+
+function StatsScreen() {
+  return (
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Text>Stats Screen</Text>
+    </View>
+  );
+}
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Tab.Navigator
-        screenOptions={{
-          headerShown: false,
-        }}
-      >
+      <Tab.Navigator>
         <Tab.Screen name="Home" component={HomeScreen} />
-        <Tab.Screen name="NFL" component={NFLScreen} />
-        <Tab.Screen name="NBA" component={NBAScreen} />
-        <Tab.Screen name="AI" component={AIScreen} />
-        <Tab.Screen name="Settings" component={SettingsScreen} />
+        <Tab.Screen name="Stats" component={StatsScreen} />
       </Tab.Navigator>
     </NavigationContainer>
   );
