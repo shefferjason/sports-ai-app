@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "SportsLogicAI",
-    "slug": "sportslogicai",
+    "slug": "sports-logic-ai",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
